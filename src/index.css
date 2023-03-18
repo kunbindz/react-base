@@ -13,6 +13,14 @@
 * {
   scroll-behavior: smooth;
 }
+@layer components {
+  .betweenCenter {
+    @apply flex justify-between items-center;
+  }
+  .flexCenter {
+    @apply flex justify-center items-center;
+  }
+}
 
 .text-gradient {
   background: radial-gradient(
