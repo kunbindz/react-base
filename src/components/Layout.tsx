@@ -23,10 +23,8 @@ const Layout = () => {
 
     let final = newPoints.slice()
 
-    for (let i = 0; i < converPosition.length; i++) {
-      // @ts-ignore
-      final.splice(2 + i, 0, converPosition[i])
-    }
+    console.log(final)
+    console.log(converPosition)
 
     // const array = [600, 500, x, y, 1000, 500]
     setPoints(final)
