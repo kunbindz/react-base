@@ -54,24 +54,32 @@ function App() {
     }
   })
   return (
-    <Stage width={window.innerWidth} height={window.innerHeight} className=' w-full bg-red-300 '>
-      <Layer>
-        <Line points={points} stroke='#1298f6' strokeWidth={8} onClick={handleLineClick} />
-        {anchors}
-        {circlePos && (
-          <Circle
-            x={circlePos.x}
-            y={circlePos.y}
-            radius={6}
-            fill='white'
-            stroke='black'
-            strokeWidth={2}
-            draggable={true}
-            onDragMove={handleCircleDrag}
-          />
-        )}
-      </Layer>
-    </Stage>
+    <>
+      <div className='bg-red-300 flex justify-center align-center '>
+        <h2 className=' font-poppins text-[52px] font-medium mt-5 text-cyan-700 '>
+          {' '}
+          Demo modify line with react-konva
+        </h2>
+      </div>
+      <Stage width={window.innerWidth} height={window.innerHeight} className=' bg-red-300 '>
+        <Layer>
+          <Line points={points} stroke='#1298f6' strokeWidth={8} onClick={handleLineClick} />
+          {anchors}
+          {circlePos && (
+            <Circle
+              x={circlePos.x}
+              y={circlePos.y}
+              radius={6}
+              fill='white'
+              stroke='black'
+              strokeWidth={2}
+              draggable={true}
+              onDragMove={handleCircleDrag}
+            />
+          )}
+        </Layer>
+      </Stage>
+    </>
   )
 }
 
