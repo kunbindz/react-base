@@ -17,17 +17,9 @@ const Layout = () => {
 
   const handleCircleDrag = (event: any) => {
     const { x, y } = event.target.position()
-
     const newPoints = [...points]
-    const converPosition = Object.values(event.target.position())
-
-    let final = newPoints.slice()
-
-    console.log(final)
-    console.log(converPosition)
-
-    // const array = [600, 500, x, y, 1000, 500]
-    setPoints(final)
+    let final = newPoints.splice(0)
+    setPoints([final[0], final[1],x,y, final[final.length - 2], final[final.length - 1] ])
     setCirclePos({ x, y })
   }
 
