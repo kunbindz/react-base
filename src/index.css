@@ -20,6 +20,9 @@
   .flexCenter {
     @apply flex justify-center items-center;
   }
+  .startCenter {
+    @apply flex justify-start items-center;
+  }
 }
 
 .text-gradient {
