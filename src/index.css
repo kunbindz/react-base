@@ -23,6 +23,9 @@
   .startCenter {
     @apply flex justify-start items-center;
   }
+  .betweenCenter {
+    @apply flex justify-between items-center;
+  }
 }
 
 .text-gradient {
