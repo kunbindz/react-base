@@ -1,6 +1,5 @@
-// @ts-nocheck
-import styles from './style.js'
-import { Billing, Bussiness, Navbar, CTA, CardDeal, Clients, Stats, Footer, Hero, Testimonials } from './components'
+import styles from '../style'
+import { Billing, Bussiness, Navbar, CTA, CardDeal, Clients, Stats, Footer, Hero, Testimonials } from '../components'
 
 const App = () => (
   <div className='bg-primary w-full overflow-hidden'>
